@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Authors>Nicholas Gueli</Authors>
+		<Product>Toolkit-Authentication</Product>
+		<Title>Toolkit Authentication</Title>
+		<Description>Libreria per la gestione dell'autenticazione nelle app asp.net</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/niko-olas/Toolkit-Authentication</PackageProjectUrl>
+		<PackageTags>csharp visualstudio aspnetcore webapi authentication jwt jwtbearer</PackageTags>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/niko-olas/Toolkit-Authentication.git</RepositoryUrl>
+		<RepositoryBranch>main</RepositoryBranch>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Company />
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.6" />
+	  <PackageReference Include="Nerdbank.GitVersioning" Version="3.5.107">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\..\SimpleAuthentication\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toolkit-Authentication", "Toolkit-Authentication\Toolkit-Authentication.csproj", "{49ABF47C-D4E3-46E8-BDEC-460A4C36F0E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{12965A4E-007A-4C6B-AD5E-571D3239720A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementi di soluzione", "Elementi di soluzione", "{0B8512F7-308B-4B92-8CAA-485B9BA97C6B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49ABF47C-D4E3-46E8-BDEC-460A4C36F0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49ABF47C-D4E3-46E8-BDEC-460A4C36F0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49ABF47C-D4E3-46E8-BDEC-460A4C36F0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49ABF47C-D4E3-46E8-BDEC-460A4C36F0E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12965A4E-007A-4C6B-AD5E-571D3239720A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12965A4E-007A-4C6B-AD5E-571D3239720A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12965A4E-007A-4C6B-AD5E-571D3239720A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12965A4E-007A-4C6B-AD5E-571D3239720A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16C8A3A4-7716-45A0-80AD-259D4F172504}
+	EndGlobalSection
+EndGlobal
