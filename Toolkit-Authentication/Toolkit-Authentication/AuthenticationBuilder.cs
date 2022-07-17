@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,14 @@ namespace Toolkit_Authentication
 {
     internal class AuthenticationBuilder : IAuthentication
     {
-        public IServiceCollection Service { get; }
+        public IConfiguration Configuration { get; }
 
-        public AuthenticationBuilder(IServiceCollection service)
+        public Microsoft.AspNetCore.Authentication.AuthenticationBuilder Builder { get; }
+
+        public AuthenticationBuilder(IConfiguration configuration, Microsoft.AspNetCore.Authentication.AuthenticationBuilder builder)
         {
-            Service = service;
+            Configuration = configuration;
+            Builder = builder;
         }
     }
 }

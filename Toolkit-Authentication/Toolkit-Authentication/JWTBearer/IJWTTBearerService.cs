@@ -2,7 +2,7 @@
 
 namespace Toolkit_Authentication.JWTBearer
 {
-    internal interface IJWTTokenGeneratorService
+    public interface IJWTBearerService
     {
         string CreateToken(string username, IList<Claim>? claims = null, string? issuer = null, string? audience = null);
     }
